@@ -1,0 +1,127 @@
+/* -------------------------------------------------
+   style.css – UI très simple et responsive
+   ------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.container {
+    max-width: 960px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+/* ---------- Titres ---------- */
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ---------- Alertes (flash‑messages) ---------- */
+.alert {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* ---------- Formulaire d'upload ---------- */
+.upload-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.upload-section button {
+    background: #28a745;
+    border: none;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-section button:hover {
+    background: #218838;
+}
+
+/* ---------- Galerie ---------- */
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .info {
+    padding: 8px;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.card .filename {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .date {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+/* ---------- Bouton suppression ---------- */
+.delete-btn {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
